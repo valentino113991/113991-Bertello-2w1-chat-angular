@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+.boton {
+    background-color: rgb(245, 207, 255);
+    color: rgb(122, 13, 155);
+    font-weight: 700;
+    padding: 9px 34px;
+    border: none;
+    border-radius: 6px;
+}
+
+.boton:hover {
+    background-color: rgb(239, 190, 252);
+    ;
+}
+
+.boton:active {
+    background-color: rgb(237, 173, 255);
+    transform: scale(0.95);
+}

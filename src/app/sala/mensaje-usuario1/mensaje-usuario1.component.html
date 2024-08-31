@@ -1,0 +1,18 @@
+<div class="card card-mensaje-1 mt-4">
+    <div class="card-header">
+        Usuario: Pepe
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="p-2">
+                <label class="mb-1" for="mensaje">Mensaje</label>
+                <textarea [(ngModel)]="mensaje1" id="mensaje" class="form-control" style="height: 94px; resize: none;"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <button (click)="enviarMensaje()" class="mb-2 boton">Guardar</button>
+        </div>
+    </div> 
+</div>

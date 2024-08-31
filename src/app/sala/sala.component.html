@@ -1,0 +1,25 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-sala">
+                <div class="card-header">
+                  Sala de Chat
+                </div>
+                <ul class="list-group list-group-flush">
+                  <h5 class="mx-3 mt-3 mb-2">Conversación: </h5>
+                  <ul style="list-style-type: none;">
+                    <li *ngFor="let m of mensajes">{{m}}</li>
+                  </ul>
+                </ul>
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <app-mensaje-usuario1 (mensajeEnviado)="modificarConversacion($event)"></app-mensaje-usuario1>
+        </div>
+        <div class="col-md-6">
+            <app-mensaje-usuario2 (mensajeEnviado)="modificarConversacion($event)"></app-mensaje-usuario2>
+        </div>
+    </div>
+</div>
